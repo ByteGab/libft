@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gafreire <gafreire@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/20 16:21:00 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/20 16:21:07 by gafreire         ###   ########.fr       */
+/*   Created: 2024/09/25 18:26:53 by gafreire          #+#    #+#             */
+/*   Updated: 2024/09/25 18:26:53 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
 int ft_isalnum(char c);
 int ft_isalpha(char a);

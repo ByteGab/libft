@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gafreire <gafreire@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/19 16:23:42 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/19 16:23:45 by gafreire         ###   ########.fr       */
+/*   Created: 2024/09/25 18:27:07 by gafreire          #+#    #+#             */
+/*   Updated: 2024/09/25 18:27:07 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+
 #include <stdio.h>
-
 #include <unistd.h>
-
 #include "libft.h"
 
 int	main(void)
