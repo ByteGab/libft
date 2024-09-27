@@ -6,15 +6,30 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:01 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:25:01 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:07:42 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(char n)
+#include <unistd.h>
+
+int ft_isdigit(int c) // revision
 {
-    if(n >= 48 && n <= 57)
+    if(!(c >= 48 && c <= 57))
     {
         return (0);
     }
-    return (1);
+    else
+    {
+        return (1);
+    }
+}
+
+int main(void)
+{
+    int	c;
+    
+    c ='y';
+	c = ft_isdigit(c) + '0';
+	write(1, &c, 1);
+	return (0);
 }
