@@ -6,9 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:12 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:24:12 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:15:52 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//#include <unistd.h>
 
 int ft_isalnum(char c)
 {
@@ -23,3 +25,15 @@ int ft_isalnum(char c)
         return (0);
     }
 }
+
+/*
+int main(void)
+{
+    int	c;
+    
+    c ='`';
+	c = ft_isalnum(c) + '0';
+	write(1, &c, 1);
+	return (0);
+}
+*/

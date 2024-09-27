@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:01 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/27 18:07:42 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:10:34 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int ft_isdigit(int c) // revision
 {
-    if(!(c >= 48 && c <= 57))
+    if(c >= 48 && c <= 57)
     {
         return (0);
     }
@@ -28,7 +28,7 @@ int main(void)
 {
     int	c;
     
-    c ='y';
+    c = 5;
 	c = ft_isdigit(c) + '0';
 	write(1, &c, 1);
 	return (0);
