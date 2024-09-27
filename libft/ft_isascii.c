@@ -6,15 +6,28 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:52 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:24:52 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:23:52 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(char a)
+#include <unistd.h>
+
+int ft_isascii(int c) // revision
 {
-    if(!(a >= 0 && a <= 255))
+    if(!(c >= 0 && c <= 255))
     {
         return (0);
     }
     return (1);
+}
+
+
+int main(void)
+{
+    int	c;
+    
+    c = 'r';
+	c = ft_isascii(c) + '0';
+	write(1, &c, 1);
+	return (0);
 }

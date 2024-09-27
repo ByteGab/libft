@@ -6,13 +6,13 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:40 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/27 18:01:21 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:24:05 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <unistd.h>
  
-int ft_isalpha(int c)
+int ft_isalpha(int c) //revision
 {
     if((c >= 65 && c <= 90)
         || (c >= 97 && c <= 122))
