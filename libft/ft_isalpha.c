@@ -6,14 +6,16 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:40 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:24:40 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 17:48:40 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(char a)
+//#include <unistd.h>
+ 
+int ft_isalpha(int c)
 {
-    if((a >= 65 && a <= 90)
-        || (a >= 97 && a <= 122))
+    if((c >= 65 && c <= 90)
+        || (c >= 97 && c <= 122))
         {
             return (1);
         }
@@ -22,3 +24,15 @@ int ft_isalpha(char a)
             return (0);
         }
 }
+
+/*
+int main(void)
+{
+    int	c;
+    
+    c = 4;
+	c = ft_isalpha(c) + '0';
+	write(1, &c, 1);
+	return (0);
+}
+*/
