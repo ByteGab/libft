@@ -6,11 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:26:37 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:26:37 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:43:20 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *s)
+int ft_strlen(char *s) // revision
 {
     int i;
     i = 0;
