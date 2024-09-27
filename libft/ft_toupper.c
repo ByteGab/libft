@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:53:59 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 19:53:59 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 19:05:51 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ int toupper (int c)
     {
         if (!(c[i] >= 65 && c[i] <= 90))
         {
-            return (0);
+            return (0); // change variable
         }
         i++;
     }
-    return (1);
+    return (1); // change variable
 }
