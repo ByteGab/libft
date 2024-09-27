@@ -6,11 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:01 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/27 18:10:34 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:34:39 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+//#include <unistd.h>
 
 int ft_isdigit(int c) // revision
 {
@@ -24,6 +24,7 @@ int ft_isdigit(int c) // revision
     }
 }
 
+/*
 int main(void)
 {
     int	c;
@@ -33,3 +34,4 @@ int main(void)
 	write(1, &c, 1);
 	return (0);
 }
+*/

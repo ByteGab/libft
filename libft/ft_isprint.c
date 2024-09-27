@@ -6,9 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:13 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:25:13 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:35:02 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//#include <unistd.h>
 
 int ft_isprint(char a)
 {
@@ -18,3 +20,16 @@ int ft_isprint(char a)
     }
     return (1);
 }
+
+/*
+int main(void)
+{
+    int	c;
+    int c2;
+    
+    c = '&';
+	c2 = ft_isprint(c) + '0';
+	write(1, &c2, 1);
+	return (0);
+}
+*/

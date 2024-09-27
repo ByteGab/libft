@@ -6,11 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:52 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/27 18:23:52 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/27 18:28:54 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+//#include <unistd.h>
 
 int ft_isascii(int c) // revision
 {
@@ -21,7 +21,7 @@ int ft_isascii(int c) // revision
     return (1);
 }
 
-
+/*
 int main(void)
 {
     int	c;
@@ -31,3 +31,4 @@ int main(void)
 	write(1, &c, 1);
 	return (0);
 }
+*/
