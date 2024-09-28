@@ -12,10 +12,9 @@
 
 //#include <unistd.h>
  
-int ft_isalpha(int c) //revision
+int ft_isalpha(int c)
 {
-    if((c >= 65 && c <= 90)
-        || (c >= 97 && c <= 122))
+    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
         {
             return (1);
         }
@@ -30,7 +29,7 @@ int main(void)
 {
     int	c;
     
-    c = 't';
+    c = 'y';
 	c = ft_isalpha(c) + '0';
 	write(1, &c, 1);
 	return (0);
