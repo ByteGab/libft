@@ -26,7 +26,7 @@ int main(void)
 {
     int	c;
     
-    c = 'r';
+    c = '\n';
 	c = ft_isascii(c) + '0';
 	write(1, &c, 1);
 	return (0);
