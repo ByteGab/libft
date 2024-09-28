@@ -16,11 +16,11 @@ int ft_isdigit(int c) // revision
 {
     if(c >= 48 && c <= 57)
     {
-        return (0);
+        return (1); // Si es un digito
     }
     else
     {
-        return (1);
+        return (0); // Si no es un digito
     }
 }
 
@@ -29,7 +29,7 @@ int main(void)
 {
     int	c;
     
-    c = 5;
+    c = '7';
 	c = ft_isdigit(c) + '0';
 	write(1, &c, 1);
 	return (0);
