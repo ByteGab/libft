@@ -30,7 +30,7 @@ int main(void)
 {
     int	c;
     
-    c = 4;
+    c = 't';
 	c = ft_isalpha(c) + '0';
 	write(1, &c, 1);
 	return (0);
