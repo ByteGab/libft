@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char    ft_strlcat(char *dst, const char *src, unsigned int size) // change variable "size"
+#include <stddef.h>
+
+char    ft_strlcat(char *dst, const char *src, size_t size) // change variable "size"
 {
     unsigned int    i;
     unsigned int    z;
