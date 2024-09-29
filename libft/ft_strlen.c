@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 //#include <stdio.h>
-//#include <stddef.h>
+#include <stddef.h>
 
 size_t ft_strlen(const char *s) // revision libreria
 {
@@ -26,9 +26,9 @@ size_t ft_strlen(const char *s) // revision libreria
 /*
 int main() {
     const char *str = "Hola, mundo!";
-    size_t length = ft_strlen(str); // Llamar a la función
+    size_t length = ft_strlen(str);
 
-    printf("La longitud de la cadena es: %zu\n", length); // Imprimir la longitud
+    printf("La longitud de la cadena es: %zu\n", length);
     return 0;
 }
 */

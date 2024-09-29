@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
 int ft_strlen(char *s)
 {
     int i;
@@ -21,7 +23,7 @@ int ft_strlen(char *s)
     return (i);
 }
 
-unsigned int ft_strlcpy (char *dst, const char *src, unsigned int size) // change  variable "size"
+unsigned int ft_strlcpy (char *dst, const char *src, size_t size) // change  variable "size"
 {
     unsigned int  i;
     unsigned int len;
