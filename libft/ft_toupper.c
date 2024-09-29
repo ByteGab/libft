@@ -10,18 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int toupper (int c)
-{
-    int i;
+#include <unistd.h>
 
-    i = 0;
-    while (c[i] != '\0')
+int ft_toupper (int c)
+{
+    if (c >= 97 && c <= 122)
     {
-        if (!(c[i] >= 65 && c[i] <= 90))
-        {
-            return (0); // change variable
-        }
-        i++;
+            return (c - 32);
     }
-    return (1); // change variable
+    return ('c');
+}
+
+int main(void)
+{
+    int	c;
+    
+    c ='1';
+	c = ft_toupper(c);
+	write(1, &c, 1);
+	return (0);
 }
