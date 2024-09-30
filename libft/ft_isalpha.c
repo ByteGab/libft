@@ -6,21 +6,22 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:40 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/27 18:24:05 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:12:44 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <unistd.h>
  
-int ft_isalpha(int c)
+int ft_isalpha(int c) //revision
 {
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+    if((c >= 65 && c <= 90)
+        || (c >= 97 && c <= 122))
         {
-            return (1); // Si es letra
+            return (1);
         }
         else
         {
-            return (0); // Si no es letra
+            return (0);
         }
 }
 
@@ -29,7 +30,7 @@ int main(void)
 {
     int	c;
     
-    c = 'y';
+    c = 'c';
 	c = ft_isalpha(c) + '0';
 	write(1, &c, 1);
 	return (0);

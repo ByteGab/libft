@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:26:06 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:26:06 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:15:15 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,5 @@ char *ft_strchr(const char *s, int c)
     {
         return (s[i]);
     }
+    return (0);
 }
