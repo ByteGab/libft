@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <string.h> // use function ft_strlen --
+#include <string.h> // use function ft_strlen -- change for my version
 #include <stddef.h>
 
 void *ft_memset(void * s, int c, size_t n)
@@ -19,8 +19,8 @@ void *ft_memset(void * s, int c, size_t n)
     size_t i;
     char *schar; 
 
-    schar = (char *)s; 
     i = 0;
+    schar = (char *)s; 
     while(i < n)
     {
         schar[i] = (unsigned char)c;

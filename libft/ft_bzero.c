@@ -14,6 +14,15 @@
 
 void bzero(void *s, size_t n)
 {
+    size_t i;
+    char *schar;
 
+    i = 0;
+    schar = (char*)s;
+    while(i < n)
+    {
+        schar[n] = '0';
+        i++;
+    }
 }
 
