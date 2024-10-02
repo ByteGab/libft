@@ -23,10 +23,10 @@ int ft_strlen(char *s)
     return (i);
 }
 
-unsigned int ft_strlcpy (char *dst, const char *src, size_t size) // change  variable "size"
+unsigned int ft_strlcpy (char *dst, const char *src, size_t size)
 {
-    unsigned int  i;
-    unsigned int len;
+    size_t i;
+    size_t len;
 
     i = 0;
     len = ft_strlen(src);

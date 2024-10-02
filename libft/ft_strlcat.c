@@ -12,10 +12,10 @@
 
 #include <stddef.h>
 
-char    ft_strlcat(char *dst, const char *src, size_t size) // change variable "size"
+char    ft_strlcat(char *dst, const char *src, size_t size)
 {
-    unsigned int    i;
-    unsigned int    z;
+    size_t i;
+    size_t z;
 
     i = 0;
     z = 0;
