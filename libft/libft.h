@@ -6,11 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:26:53 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:26:53 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/03 16:34:50 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 int ft_isalnum(char c);
 int ft_isalpha(char a);
 int ft_isascii(char a);
