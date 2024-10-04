@@ -6,7 +6,13 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:52:53 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 19:52:53 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:39:48 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void *ft_mechr(const void *str, int c, size_t n)
+{
+    
+}
