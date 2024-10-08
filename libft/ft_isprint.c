@@ -6,22 +6,25 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:13 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/27 18:35:02 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:23:13 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
+#include "libft.h"
 
-int ft_isprint(char a)
+int ft_isprint(int c)
 {
-    if(!(a >= 32 && a <= 126))
+    unsigned char cChar;
+
+    cChar = (unsigned char) c;
+    if(!(cChar >= 32 && cChar <= 126))
     {
         return (0); // no es printable
     }
     return (1); // si es printable
 }
 
-/*
+
 int main(void)
 {
     int	c;
@@ -32,4 +35,4 @@ int main(void)
 	write(1, &c2, 1);
 	return (0);
 }
-*/
+
