@@ -10,12 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
+#include "libft.h"
  
-int ft_isalpha(int c) //revision
+int ft_isalpha(int c)
 {
-    if((c >= 65 && c <= 90)
-        || (c >= 97 && c <= 122))
+    unsigned char cChar;
+
+    cChar = (unsigned char)c; // change name variable
+
+    if((cChar >= 65 && cChar <= 90)
+        || (cChar >= 97 && cChar <= 122))
         {
             return (1);
         }
@@ -25,7 +29,7 @@ int ft_isalpha(int c) //revision
         }
 }
 
-/*
+
 int main(void)
 {
     int	c;
@@ -35,4 +39,4 @@ int main(void)
 	write(1, &c, 1);
 	return (0);
 }
-*/
+

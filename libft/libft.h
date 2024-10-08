@@ -12,7 +12,7 @@
 
 #include <unistd.h>
 int ft_isalnum(char c);
-int ft_isalpha(char a);
+int ft_isalpha(int c);
 int ft_isascii(char a);
 int ft_isdigit(char n);
 int ft_isprint(char a);
