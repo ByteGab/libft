@@ -34,7 +34,7 @@ int main(void)
 {
     int	c;
     
-    c = 'c';
+    c = "-c";
 	c = ft_isalpha(c) + '0';
 	write(1, &c, 1);
 	return (0);

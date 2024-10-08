@@ -10,11 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
+#include "libft.h"
 
 int ft_isdigit(int c) // revision
 {
-    if(c >= 48 && c <= 57)
+    unsigned char cChar;
+
+    cChar = (unsigned char)c;
+
+    if(cChar >= 48 && cChar <= 57)
     {
         return (1); // Si es un digito
     }
@@ -24,14 +28,13 @@ int ft_isdigit(int c) // revision
     }
 }
 
-/*
+
 int main(void)
 {
     int	c;
     
-    c = '7';
+    c = "-5";
 	c = ft_isdigit(c) + '0';
 	write(1, &c, 1);
 	return (0);
 }
-*/
