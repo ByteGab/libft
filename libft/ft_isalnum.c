@@ -6,17 +6,21 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:12 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/27 18:15:52 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:18:00 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
+#include "libft.h"
 
 int ft_isalnum(char c)
 {
-    if (((c >= 65 && c <= 90)
-        || (c >= 97 && c <= 122))
-        || (c >= 48 && c <= 57))
+    unsigned char cChar;
+    
+    cChar = (unsigned char)c;
+    
+    if (((cChar >= 65 && cChar <= 90)
+        || (cChar >= 97 && cChar <= 122))
+        || (cChar >= 48 && cChar <= 57))
     {
         return (1); // si es alpha || si es digit
     }
@@ -26,14 +30,13 @@ int ft_isalnum(char c)
     }
 }
 
-/*
+
 int main(void)
 {
     int	c;
     
-    c ='`';
+    c ='4';
 	c = ft_isalnum(c) + '0';
 	write(1, &c, 1);
 	return (0);
 }
-*/
