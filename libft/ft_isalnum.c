@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:12 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/08 16:26:03 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:28:28 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int main(void)
 {
     int	c;
     
-    c ='4';
+    c ='a';
 	c = ft_isalnum(c) + '0';
 	write(1, &c, 1);
 	return (0);
