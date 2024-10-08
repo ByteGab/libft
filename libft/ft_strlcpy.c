@@ -6,11 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:26:28 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:26:28 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 17:23:42 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int ft_strlen(char *s)
 {
@@ -23,7 +23,7 @@ int ft_strlen(char *s)
     return (i);
 }
 
-unsigned int ft_strlcpy (char *dst, const char *src, size_t size)
+size_t ft_strlcpy (char *dst, const char *src, size_t size)
 {
     size_t i;
     size_t len;
