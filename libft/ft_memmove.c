@@ -6,13 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:53 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:25:53 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 17:15:09 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stddef.h>
-#include <string.h>
+#include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t n)
 {
