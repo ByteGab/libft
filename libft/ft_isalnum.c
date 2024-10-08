@@ -6,13 +6,13 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:12 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/08 16:18:00 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:26:03 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(char c)
+int ft_isalnum(int c)
 {
     unsigned char cChar;
     
