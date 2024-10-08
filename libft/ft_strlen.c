@@ -6,14 +6,13 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:26:37 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/30 16:48:34 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:29:46 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
-size_t ft_strlen(const char *s) // revision libreria
+size_t ft_strlen(const char *s)
 {
     size_t i;
     i = 0;
