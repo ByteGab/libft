@@ -6,13 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:43 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 18:25:43 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:54:43 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <string.h> // use function ft_strlen -- change for my version
-#include <stddef.h>
+#include "libft.h"
 
 void *ft_memcpy(void *dest, const void *src, size_t n)
 {
