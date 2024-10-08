@@ -6,21 +6,19 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 18:17:00 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/23 18:17:06 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:43:58 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <string.h> // use function ft_strlen -- change for my version
-#include <stddef.h>
+#include "libft.h"
 
 void *ft_memset(void * s, int c, size_t n)
 {
     size_t i;
-    char *schar; 
+    unsigned char *schar; //change name variable // revision "unsigned char"
 
     i = 0;
-    schar = (char *)s; 
+    schar = (unsigned char *)s; 
     while(i < n)
     {
         schar[i] = (unsigned char)c;
