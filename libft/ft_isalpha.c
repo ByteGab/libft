@@ -14,12 +14,8 @@
  
 int ft_isalpha(int c)
 {
-    unsigned char cChar;
-
-    cChar = (unsigned char)c; // change name variable
-
-    if((cChar >= 65 && cChar <= 90)
-        || (cChar >= 97 && cChar <= 122))
+    if((c >= 65 && c <= 90)
+        || (c >= 97 && c <= 122))
         {
             return (1);
         }
@@ -32,10 +28,11 @@ int ft_isalpha(int c)
 
 int main(void)
 {
-    int	c;
+    char c;
     
-    c = "-c";
-	c = ft_isalpha(c) + '0';
+    c = '-a';
+	c = ft_isalpha((unsigned char)c);
+    c += '0';
 	write(1, &c, 1);
 	return (0);
 }
