@@ -13,14 +13,10 @@
 #include "libft.h"
 
 int ft_isalnum(int c)
-{
-    unsigned char cChar;
-    
-    cChar = (unsigned char)c;
-    
-    if (((cChar >= 65 && cChar <= 90)
-        || (cChar >= 97 && cChar <= 122))
-        || (cChar >= 48 && cChar <= 57))
+{    
+    if (((c >= 65 && c <= 90)
+        || (c >= 97 && c <= 122))
+        || (c >= 48 && c <= 57))
     {
         return (1); // si es alpha || si es digit
     }
@@ -35,8 +31,9 @@ int main(void)
 {
     int	c;
     
-    c ='a';
-	c = ft_isalnum(c) + '0';
+    c = 'b';
+	c = ft_isalnum(c);
+    c += '0'; 
 	write(1, &c, 1);
 	return (0);
 }
