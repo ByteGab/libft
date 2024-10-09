@@ -18,12 +18,9 @@ int ft_isalnum(int c)
         || (c >= 97 && c <= 122))
         || (c >= 48 && c <= 57))
     {
-        return (1); // si es alpha || si es digit
+        return (1);
     }
-    else
-    {
-        return (0); // si no es
-    }
+        return (0);
 }
 
 
