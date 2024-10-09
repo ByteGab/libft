@@ -12,15 +12,15 @@
 
 #include "libft.h"
 
-int ft_isdigit(int c) // revision
+int ft_isdigit(int c)
 {
     if(c >= 48 && c <= 57)
     {
-        return (1); // Si es un digito
+        return (1);
     }
     else
     {
-        return (0); // Si no es un digito
+        return (0);
     }
 }
 
