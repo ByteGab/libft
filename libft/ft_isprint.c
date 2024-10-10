@@ -12,24 +12,24 @@
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int     ft_isprint(int c)
 {
-    if((c >= 32 && c <= 126))
-    {
-        return (1);
-    }
-    return (0);
+        if ((c >= 32 && c <= 126))
+        {
+                return (1);
+        }
+        return (0);
 }
 
-
-int main(void)
+/*
+int     main(void)
 {
-    int	c;
-    
-    c = '\0';
-	c = ft_isprint(c);
-    c += '0'; 
-	write(1, &c, 1);
-	return (0);
-}
+        int     c;
 
+        c = '\0';
+        c = ft_isprint(c);
+        c += '0';
+        write(1, &c, 1);
+        return (0);
+}
+*/
