@@ -11,26 +11,24 @@
 /* ************************************************************************** */
 
 #include "libft.h"
- 
-int ft_isalpha(int c)
+
+int     ft_isalpha(int c)
 {
-    if((c >= 65 && c <= 90)
-        || (c >= 97 && c <= 122))
+        if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
         {
-            return (1);
+                return (1);
         }
-            return (0);
+        return (0);
 }
 
-
-int main(void)
+int     main(void)
 {
-    char c;
-    
-    c = '-a';
-	c = ft_isalpha((unsigned char)c);
-    c += '0';
-	write(1, &c, 1);
-	return (0);
-}
+        char    c;
 
+        c = '-a';
+        c = ft_isalpha((unsigned char)c);
+        c += '0';
+        write(1, &c, 1);
+        return (0);
+}
+   
