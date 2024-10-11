@@ -12,27 +12,26 @@
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if((c >= 0 && c <= 255))
-    {
-        return (1);
-    }
-    else
-    {
-        return (0);
-    }
+	if ((c >= 0 && c <= 255))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
 
-
-int main(void)
+int	main(void)
 {
-    int	c;
-    
-    c = '络';
+	int	c;
+
+	c = '络';
 	c = ft_isascii(c);
-    c += '0'; 
+	c += '0';
 	write(1, &c, 1);
 	return (0);
 }
-
+                                   
