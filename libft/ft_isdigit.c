@@ -12,23 +12,23 @@
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    if(c >= 48 && c <= 57)
-    {
-        return (1);
-    }
-        return (0);
+	if (c >= 48 && c <= 57)
+	{
+		return (1);
+	}
+	return (0);
 }
 
-
-int main(void)
+int	main(void)
 {
-    int	c;
-    
-    c = 'b';
+	int	c;
+
+	c = 'b';
 	c = ft_isdigit(c);
-    c += '0';
+	c += '0';
 	write(1, &c, 1);
 	return (0);
 }
+   
