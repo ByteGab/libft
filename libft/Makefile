@@ -1,5 +1,5 @@
 NAME = libft.a
-SOURCES = ft_atoi.c 
+SOURCES = ft_isalpha.c
 OBJECTS = $(SOURCES:.c=.o)                                                  
                                                                                  
 CC = gcc                                                                         
