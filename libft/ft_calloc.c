@@ -12,7 +12,6 @@
 
 #include <stddef.h>
 
-void *ft_calloc (size_t nelem, size_t elsize)
+void    *ft_calloc(size_t nelem, size_t elsize)
 {
-    
-}
+}                                                                                     

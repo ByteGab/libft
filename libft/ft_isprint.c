@@ -24,12 +24,12 @@ int     ft_isprint(int c)
 /*
 int     main(void)
 {
-        int     c;
+                int     c;
 
-        c = '\0';
-        c = ft_isprint(c);
-        c += '0';
-        write(1, &c, 1);
-        return (0);
+                c = '\0';
+                c = ft_isprint(c);
+                c += '0';
+                write(1, &c, 1);
+                return (0);
 }
-*/
+*/                                                                                     
