@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:26:28 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/08 17:23:42 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/12 13:14:28 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,14 @@ size_t ft_strlcpy (char *dst, const char *src, size_t size)
     }
     return (i);
 
+}
+
+int main(void)
+{
+    size_t i = 10;
+    char src [5] = "adios";
+    char dest[10] = "hola";
+    char result = ft_strlcpy(dest, src, i);
+    write(1, result, 1);
+    return (0);
 }
