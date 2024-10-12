@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:13 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/08 16:23:13 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/12 21:51:52 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
-
+/*
 int	main(void)
 {
 	int	c;
@@ -31,4 +31,4 @@ int	main(void)
 	write(1, &c, 1);
 	return (0);
 }
-                                                                                    
+*/
