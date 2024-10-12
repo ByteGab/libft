@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:53 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/08 17:15:09 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/12 12:55:43 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,28 +17,38 @@ void *ft_memmove(void *dest, const void *src, size_t n)
     size_t i;
     char *destchar;
     char *srchar;
-    char *temporal;
 
-    i = 0;
+    i = n;
     destchar = (char*)dest;
     srchar = (char*)src;
-    while (i < n)
+    
+    if(srchar < destchar)
     {
-        temporal[i] = srchar[i];
-        i++;
-    }
-    while (destchar[i] != '\0')
+        i = n;
+        while(i > 0)
     {
-        destchar[i] = temporal[i];
-        i++;
+        i--;
+        destchar[i] = srchar[i];
     }
-    return dest;
+    }
+    else
+    {
+        i = 0;
+        while(i < n)
+        {
+            destchar[i] = srchar[i];
+            i++;
+        }      
+    }
+    return (dest);
 }
 
 int main(void)
 {
-    char src[10] = "123456789";
-    ft_memmove(src, src, 5);
-    write(1, src, strlen(src));
+    size_t i = 10;
+    char src [5] = "adios";
+    char dest[10] = "hola";
+    ft_memmove(dest, src, i);
+    write(1, dest, strlen(dest));
     return (0);
 }
