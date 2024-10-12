@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:53:50 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/25 19:53:50 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:35:08 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main (void)
 {
     int c;
 
-    c = 'F';
+    c = 5;
     c = ft_tolower(c);
     write(1, &c, 1);
     return(0);
