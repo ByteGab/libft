@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:53:20 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/12 18:43:41 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/12 22:29:36 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int ft_strncmp (const char *s1, const *s2, size_t n) // change variabe "n"
     size_t  i;
 
     i = 0;
-    while (s1[i] != '\0' && s2[i] != '\0' && s1 == s2[i] == s2[i] && i < n)
+    while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i] && i < n)
     {
         i++;
     }
