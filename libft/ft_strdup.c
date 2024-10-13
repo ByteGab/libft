@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 13:32:37 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 14:12:35 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 14:34:24 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char *ft_strdup(const char *s)
 {
     char *mem;
     size_t size;
-    
+
     size = ft_strlen(s) + 1;
     mem =(char *)malloc(size);
     if (mem != NULL)
