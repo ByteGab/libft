@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 03:23:58 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:08:19 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:26:34 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ static void	ft_write(char char_nb, int fd)
 {
 	write(fd, &char_nb, 1);
 }
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 16:16:56 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:05:10 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:30:52 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t i;
-	size_t size;
-	char *mem;
+	size_t	i;
+	size_t	size;
+	char	*mem;
 
 	i = 0;
 	size = ft_strlen(s1);
@@ -24,5 +24,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (mem == NULL)
 		return (NULL);
 	ft_strlcat(s1, s2, size);
-	return (s1);clear
+	return (s1);
 }
