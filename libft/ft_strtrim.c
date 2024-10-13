@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/06 10:05:24 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:12:16 by gafreire         ###   ########.fr       */
+/*   Created: 2024/10/13 16:40:29 by gafreire          #+#    #+#             */
+/*   Updated: 2024/10/13 17:00:31 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *str, int c, size_t n)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
-	char	*strchar;
+	size_t i;
+	size_t size;
+	char *mem;
 
-	strchar = (char *)str;
 	i = 0;
-	while (strchar[i] != '\0' && i < n)
-	{
-		if (strchar[i] == (char)c)
-		{
-			return (strchar[i]);
-		}
-		i++;
-	}
-	return (NULL);
+	size = ft_strlen(s1);
+	mem = (char *)malloc(size + 1);
+	if (mem == NULL)
+		return (NULL);
 }

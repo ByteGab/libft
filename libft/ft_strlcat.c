@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:26:21 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 16:55:14 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:13:07 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t i;
-	size_t z;
-	size_t result;
+	size_t	i;
+	size_t	z;
+	size_t	result;
 
 	i = 0;
 	z = 0;

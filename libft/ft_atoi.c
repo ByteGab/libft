@@ -6,20 +6,19 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:13:12 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:02:20 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:10:30 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(const char *nptr)
 {
-	int i;
-	int sign;
-	int result;
+	int	i;
+	int	sign;
+	int	result;
 
 	i = 0;
 	sign = 1;
 	result = 0;
-
 	while (nptr[i] == "")
 	{
 		i++;
