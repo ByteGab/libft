@@ -13,13 +13,11 @@
 int	ft_atoi(const char *nptr)
 {
 	int	i;
-	int	sign;
 	int	result;
 
 	i = 0;
-	sign = 1;
 	result = 0;
-	while (nptr[i] == "")
+	while (nptr[i] == ' ')
 	{
 		i++;
 	}

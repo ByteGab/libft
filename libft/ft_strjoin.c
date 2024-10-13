@@ -11,18 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdlib.h>
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
 	size_t	size;
 	char	*mem;
 
-	i = 0;
 	size = ft_strlen(s1);
 	mem = (char *)malloc(size + 1);
 	if (mem == NULL)
 		return (NULL);
-	ft_strlcat(s1, s2, size);
-	return (s1);
+	ft_strlcat((char *)s1, s2, size);
+	return ((char *)s1);
 }

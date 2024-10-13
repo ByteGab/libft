@@ -11,16 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
 	size_t	size;
 	char	*mem;
 
-	i = 0;
 	size = ft_strlen(s1);
 	mem = (char *)malloc(size + 1);
 	if (mem == NULL)
 		return (NULL);
+	return((char)set);
 }
