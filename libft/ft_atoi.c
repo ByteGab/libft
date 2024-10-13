@@ -6,11 +6,11 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:13:12 by gafreire          #+#    #+#             */
-/*   Updated: 2024/09/26 16:54:35 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:48:48 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(char *str)// add const char
+int ft_atoi(const char *nptr)
 {
     int i;
     int sign;
@@ -20,10 +20,24 @@ int ft_atoi(char *str)// add const char
     sign = 1;
     result = 0;
     
-    while (str[i] >= '0' && str[i] <= '9')
+    while(nptr[i] == "")
     {
-        result = (str[i] - '0') + (result * 10);
         i++;
     }
-    return (result * sign);
+    if(nptr[i] == '-')
+    {
+        i++;
+        while(nptr[i] >= '0' && nptr[i] <= '9')
+        {
+            result = result * 10 + nptr[i] - '0';
+            i++;
+        }
+        return(-result);
+    }
+    while (nptr[i] >= '0' && nptr[i] <='9')
+    {
+        result = result * 10 + nptr[i] - '0';
+        i++;
+    }
+    return(result);
 }
