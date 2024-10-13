@@ -6,13 +6,13 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 03:23:58 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 12:27:29 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:28:15 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_write(char char_nb, int fd)
+static void	ft_write(char char_nb, int fd)
 {
 	write (fd, &char_nb, 1);
 }
