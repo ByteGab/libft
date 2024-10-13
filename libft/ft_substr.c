@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 14:18:14 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 16:14:55 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:21:07 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
         mem[i] = s[i];
         i++;
     }
+    mem[i] = '\0';
     return (mem);
 }
