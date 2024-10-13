@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 18:17:00 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 13:52:17 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:48:55 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*schar;
 
 	i = 0;
@@ -27,11 +27,12 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 /*
-int main(void)
+int	main(void)
 {
-    char str[50] = "Hello World!";
-    ft_memset(str, '-', 3);
-    write(1, str, strlen(str));
-    return (0);
+	char	str[50] = "Hello World!";
+
+	ft_memset(str, '-', 3);
+	write(1, str, strlen(str));
+	return (0);
 }
 */
