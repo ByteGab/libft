@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:43 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/12 12:11:42 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:29:58 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
     }
     return (dest);
 }
-
+/*
 int main(void)
 {
     char src[50] = "Hello World!";
@@ -37,3 +37,4 @@ int main(void)
     write(1, dest, strlen(dest));
     return (0);
 }
+*/
