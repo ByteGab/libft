@@ -6,27 +6,27 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:53:50 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/12 17:35:08 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:47:42 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if (c >= 65 && c <= 90)
-    {
-        return (c + 32);
-    }
-    return ('c');
+	if (c >= 65 && c <= 90)
+	{
+		return (c + 32);
+	}
+	return ('c');
 }
 
-int main (void)
+int	main(void)
 {
-    int c;
+	int c;
 
-    c = 5;
-    c = ft_tolower(c);
-    write(1, &c, 1);
-    return(0);
+	c = 5;
+	c = ft_tolower(c);
+	write(1, &c, 1);
+	return (0);
 }
