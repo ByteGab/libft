@@ -18,8 +18,10 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*mem;
 	size_t	size_total;
 
-	mem = malloc(nmemb * size);
-	size_total = 0;
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	size_total = nmemb * size;
+	mem = malloc(size_total);
 	if (mem == NULL)
 		return (NULL);
 	ft_bzero(mem, size_total);
