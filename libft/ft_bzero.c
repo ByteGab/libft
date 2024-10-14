@@ -21,7 +21,7 @@ void	ft_bzero(void *s, size_t n)
 	schar = (char *)s;
 	while (i < n)
 	{
-		schar[n] = '0';
+		schar[i] = '\0';
 		i++;
 	}
 }
