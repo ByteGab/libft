@@ -18,9 +18,17 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char	*destchar;
 	char	*srchar;
 
+	if (dest == NULL && src == NULL) 
+	{
+		return NULL;
+    }
 	i = n;
 	destchar = (char *)dest;
 	srchar = (char *)src;
+	if (n == 0 || destchar == srchar) 
+	{
+		return dest;
+    }
 	if (srchar < destchar)
 	{
 		i = n;
