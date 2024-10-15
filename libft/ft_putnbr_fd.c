@@ -6,38 +6,44 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 03:23:58 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:26:34 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/15 17:57:21 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-static void	ft_write(char char_nb, int fd)
-{
-	write(fd, &char_nb, 1);
-}
+#include <fcntl.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{
-		ft_write('-', fd);
-		ft_write('2', fd);
-		ft_putnbr(147483648);
+		ft_putchar_fd('-', fd);
+		ft_putchar_fd('2', fd);
+		ft_putnbr_fd(147483648, fd);
 		return ;
 	}
 	if (n < 0)
 	{
-		ft_write('-', fd);
+		ft_putchar_fd('-', fd);
 		n = -n;
 	}
 	if (n > 9)
 	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
 	}
 	else
 	{
-		ft_write(n + '0', fd);
+		ft_putchar_fd(n + '0', fd);
 	}
+}
+
+int main(void)
+{
+	int	fd;
+	int n;
+
+	fd = open("test.txt", O_WRONLY | O_CREAT, 0644);
+	ft_putnbr_fd(9999, fd);
+	close(fd);
+	return(0);
 }
