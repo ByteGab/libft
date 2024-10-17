@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:43 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 16:50:40 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:49:36 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,17 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	char	*destchar;
 	char	*srchar;
 
-	if (dest == NULL && src == NULL) 
+	if (dest == NULL && src == NULL)
 	{
-		return NULL;
-    }
+		return (NULL);
+	}
 	i = 0;
 	destchar = (char *)dest;
 	srchar = (char *)src;
-	if (n == 0 || destchar == srchar) 
+	if (n == 0 || destchar == srchar)
 	{
-		return dest;
-    }
+		return (dest);
+	}
 	while (i < n)
 	{
 		destchar[i] = srchar[i];
