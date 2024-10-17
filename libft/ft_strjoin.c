@@ -6,12 +6,13 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 16:16:56 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:30:52 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:51:14 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	size;
