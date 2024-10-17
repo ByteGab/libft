@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:53 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 16:51:44 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:50:24 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,17 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char	*destchar;
 	char	*srchar;
 
-	if (dest == NULL && src == NULL) 
+	if (dest == NULL && src == NULL)
 	{
-		return NULL;
-    }
+		return (NULL);
+	}
 	i = n;
 	destchar = (char *)dest;
 	srchar = (char *)src;
-	if (n == 0 || destchar == srchar) 
+	if (n == 0 || destchar == srchar)
 	{
-		return dest;
-    }
+		return (dest);
+	}
 	if (srchar < destchar)
 	{
 		i = n;
