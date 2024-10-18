@@ -10,26 +10,38 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-char	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
+	size_t	dst_len;
+	size_t	src_len;
 	size_t	i;
-	size_t	z;
-	size_t	result;
+	size_t	j;
 
-	i = 0;
-	z = 0;
-	while (dst[i] != '\0')
-	{
+	// Calcula las longitudes de las cadenas
+	dst_len = 0;
+	src_len = ft_strlen(src);
+	while (dst[dst_len] != '\0' && dst_len < size)
+		dst_len++;
+
+	// Si el tamaño es menor o igual que la longitud de dst, no concatenamos
+	if (dst_len == size)
+		return (size + src_len);
+
+	// Concatenamos src en dst hasta que llenemos el espacio o terminemos src
+	i = dst_len;
+	j = 0;
+	while (src[j] != '\0' && i < size - 1) {
+		dst[i] = src[j];
 		i++;
+		j++;
 	}
-	while (src[z] != '\0' && z < size)
-	{
-		dst[i + z] = src[z];
-		z++;
-	}
-	dst[i + z] = '\0';
-	result = i + z;
-	return (result);
+
+	// Añadir el terminador nulo si hay espacio
+	if (i < size)
+		dst[i] = '\0';
+
+	// Devolver el tamaño combinado que se habría generado
+	return (dst_len + src_len);
 }
