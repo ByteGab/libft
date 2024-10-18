@@ -15,23 +15,26 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int	i;
+	const char *last_occurrence;
+	    if (c == '\0') {
+        // Buscamos el final de la cadena y devolvemos ese puntero
+        while (*str != '\0') {
+            str++;
+        }
+        return (char *)str;  // Aquí `str` apunta al carácter nulo
+    }
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	i += 1;
-	while (i != 0)
-	{
-		if (str[i] == c)
-		{
-			return ((char *)&str[i]);
-		}
-		i--;
-	}
-	return (NULL);
+    // Contar la longitud de la cadena
+	last_occurrence = NULL;  // Puntero para la última ocurrencia
+    while (*str != '\0') {
+        if (*str == (char)c) {
+            last_occurrence = str;  // Guardamos la dirección de la última ocurrencia
+        }
+        str++;  // Avanzar al siguiente carácter
+    }
+
+    // Retornar la última ocurrencia, o NULL si no se encontró
+    return (char *)last_occurrence;
 }
 /*
 int	main(void)
