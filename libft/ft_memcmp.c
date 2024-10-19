@@ -21,10 +21,13 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	i = 0;
 	str1char = (unsigned char *)str1;
 	str2char = (unsigned char *)str2;
-	while (str1char[i] != '\0' && str2char[i] != '\0'
-		&& str1char[i] == str2char[i] && i < n)
+	while (i < n)
 	{
+		if(str1char[i] != str2char[i])
+		{
+			return (str1char[i] - str2char[i]);
+		}
 		i++;
 	}
-	return (str1char[i] - str2char[i]);
+	return (0);
 }
