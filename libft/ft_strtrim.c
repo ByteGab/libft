@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 16:40:29 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/19 13:29:18 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/19 13:34:15 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	size;
 	size_t	i;
 	size_t	z;
-	size_t	j;
 	char	*mem;
 	char	*rm_set;
 
@@ -31,13 +30,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	while (s1[i] != '\0')
 	{
-		while (ft_strchr(set, s1[i]) != NULL)
+		if (ft_strchr(set, s1[i]) != NULL)
 		{
 			i++;
 		}
 		mem[z] = s1[i];
 		z++;
 	}
-	mem[j] = '\0';
+	mem[z + 1] = '\0';
 	return (mem);
 }
