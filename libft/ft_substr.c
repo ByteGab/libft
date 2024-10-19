@@ -19,16 +19,18 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	size;
 	char	*mem;
 
-	i = start;
 	size = ft_strlen(s);
-	mem = (char *)malloc(size + 1);
+	if (start >= size)
+		return (ft_strdup(""));
+	if ((size - start) < len)
+		len = size - start;
+	mem = (char *)malloc(len + 1);
 	if (mem == NULL)
 		return (NULL);
-	if (size - start < len)
-		len = size - start;
+	i = 0;
 	while (i < len)
 	{
-		mem[i] = s[i];
+		mem[i] = s[start + i];
 		i++;
 	}
 	mem[i] = '\0';
