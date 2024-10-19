@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 16:40:29 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/19 13:34:15 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:15:26 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,18 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	z = 0;
 	rm_set = (char *)set;
-	size = ft_strlen((char)s1);
-	mem = (char *)malloc(size);
+	size = ft_strlen(s1);
+	mem = (char *)malloc(size + 1);
 	if (mem == NULL)
 		return (NULL);
 	while (s1[i] != '\0')
 	{
-		if (ft_strchr(set, s1[i]) != NULL)
+		if (ft_strchr(set, s1[i]) == NULL)
 		{
-			i++;
+			mem[z] = s1[i];
+			z++;
 		}
-		mem[z] = s1[i];
-		z++;
+		i++;
 	}
 	mem[z + 1] = '\0';
 	return (mem);
