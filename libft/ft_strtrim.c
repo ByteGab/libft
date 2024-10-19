@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 16:40:29 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/19 18:15:26 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:19:52 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 		}
 		i++;
 	}
-	mem[z + 1] = '\0';
+	mem[z] = '\0';
 	return (mem);
 }
