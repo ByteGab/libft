@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:18:01 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/20 11:23:52 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 11:38:44 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,13 @@ static size_t	size_sub(char const *s, char c)
 	count = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] != c && s[i] != '\0')
+		if (s[i] != c)
 		{
 			count++;
-			i++;
+		}
+		else if (count > 0)
+		{
+			break ;
 		}
 		i++;
 	}
@@ -60,13 +63,43 @@ char	**ft_split(char const *s, char c)
 {
 	size_t	words;
 	char	**sub;
+	size_t	i;
+	size_t	j;
+	size_t	size_word;
+	size_t	k;
 
 	words = count_words(s, c);
-	sub = (char **)malloc(sizeof(char *) * words);
-	while (i < n)
+	sub = (char **)malloc(sizeof(char *) * (words + 1));
+	if (!sub)
 	{
-		free(sub[i]);
-		i++;
+		return (NULL);
 	}
-	free(sub);
+	while (s[i] != '\0')
+	{
+		if (s[i] != c)
+		{
+			size_word = size_sub(&s[i], c);
+			sub[j] = (char *)malloc(sizeof(char) * (size_word + 1));
+			if (!sub[j])
+			{
+				while (k < j)
+				{
+					free(sub[k]);
+					k++;
+				}
+				free(sub);
+				return (NULL);
+			}
+			strncpy(sub[j], &s[i], size_word);
+			sub[j][size_word] = '\0';
+			j++;
+			i += size_word;
+		}
+		else
+		{
+			i++;
+		}
+	}
+	sub[j] = NULL;
+	return (sub);
 }
