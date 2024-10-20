@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:53 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/17 16:50:24 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:47:44 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,23 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-	char	*destchar;
-	char	*srchar;
+	size_t				i;
+	unsigned char		*char_dest;
+	const unsigned char	*char_src;
 
-	if (dest == NULL && src == NULL)
-	{
+	if (!dest && !src)
 		return (NULL);
-	}
-	i = n;
-	destchar = (char *)dest;
-	srchar = (char *)src;
-	if (n == 0 || destchar == srchar)
-	{
+	char_dest = (unsigned char *)dest;
+	char_src = (const unsigned char *)src;
+	if (n == 0 || char_dest == char_src)
 		return (dest);
-	}
-	if (srchar < destchar)
+	if (char_src < char_dest)
 	{
 		i = n;
 		while (i > 0)
 		{
 			i--;
-			destchar[i] = srchar[i];
+			char_dest[i] = char_src[i];
 		}
 	}
 	else
@@ -43,7 +38,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		i = 0;
 		while (i < n)
 		{
-			destchar[i] = srchar[i];
+			char_dest[i] = char_src[i];
 			i++;
 		}
 	}
