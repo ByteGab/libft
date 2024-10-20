@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:43 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/17 16:49:36 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:34:34 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,20 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-	char	*destchar;
-	char	*srchar;
+	size_t				i;
+	unsigned char		*char_dest;
+	const unsigned char	*char_src;
 
-	if (dest == NULL && src == NULL)
-	{
+	if (!dest && !src)
 		return (NULL);
-	}
 	i = 0;
-	destchar = (char *)dest;
-	srchar = (char *)src;
-	if (n == 0 || destchar == srchar)
-	{
+	char_dest = (unsigned char *)dest;
+	char_src = (const unsigned char *)src;
+	if (n == 0 || char_dest == char_src)
 		return (dest);
-	}
 	while (i < n)
 	{
-		destchar[i] = srchar[i];
+		char_dest[i] = char_dest[i];
 		i++;
 	}
 	return (dest);
@@ -40,8 +36,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 int	main(void)
 {
 	char	src[50] = "Hello World!";
+	char	dest[50] = "Bye World!";
 
-	char dest[50] = "Bye World!";// revision !\0 (puede ser que haga falta)
 	ft_memcpy(dest, src, 5);
 	write(1, dest, strlen(dest));
 	return (0);
