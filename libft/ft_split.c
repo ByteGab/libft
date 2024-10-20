@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:18:01 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/20 11:38:44 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 11:42:49 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,9 @@ char	**ft_split(char const *s, char c)
 
 	words = count_words(s, c);
 	sub = (char **)malloc(sizeof(char *) * (words + 1));
+	i = 0;
+	j = 0;
+	k  = 0;
 	if (!sub)
 	{
 		return (NULL);
