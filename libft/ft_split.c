@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:18:01 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/20 11:42:49 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 11:47:35 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,11 +68,11 @@ char	**ft_split(char const *s, char c)
 	size_t	size_word;
 	size_t	k;
 
-	words = count_words(s, c);
-	sub = (char **)malloc(sizeof(char *) * (words + 1));
 	i = 0;
 	j = 0;
-	k  = 0;
+	k = 0;
+	words = count_words(s, c);
+	sub = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!sub)
 	{
 		return (NULL);
@@ -93,7 +93,7 @@ char	**ft_split(char const *s, char c)
 				free(sub);
 				return (NULL);
 			}
-			strncpy(sub[j], &s[i], size_word);
+			ft_memcpy(sub[j], &s[i], size_word);
 			sub[j][size_word] = '\0';
 			j++;
 			i += size_word;
