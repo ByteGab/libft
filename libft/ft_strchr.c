@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:26:06 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/19 12:00:48 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 14:46:01 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,11 @@ char	*ft_strchr(const char *s, int c)
 	while (s[i] != '\0')
 	{
 		if (s[i] == (char)c)
-		{
 			return ((char *)&s[i]);
-		}
 		i++;
 	}
 	if ((char)c == '\0')
-	{
 		return ((char *)&s[i]);
-	}
 	return (NULL);
 }
 /*
