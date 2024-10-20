@@ -13,22 +13,24 @@
 #include "libft.h"
 #include <stdio.h>
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	const char	*last_occurrence;
+	size_t i;
+	char	*last_occurrence;
 
+	i = 0;
 	last_occurrence = NULL;
-	while (*str != '\0')
+	while (s[i] != '\0')
 	{
-		if (*str == (char)c)
-			last_occurrence = str;
-		str++;
+		if (s[i] == (unsigned char)c)
+			last_occurrence = (char *)&s[i];
+		i++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 	{
-		return ((char *)str);
+		return ((char *)&s[i]);
 	}
-	return ((char *)last_occurrence);
+	return (last_occurrence);
 }
 
 /*
