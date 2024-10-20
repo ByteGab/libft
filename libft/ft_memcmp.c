@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 03:33:02 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:01:08 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 11:53:15 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	str2char = (unsigned char *)str2;
 	while (i < n)
 	{
-		if(str1char[i] != str2char[i])
+		if (str1char[i] != str2char[i])
 		{
 			return (str1char[i] - str2char[i]);
 		}
