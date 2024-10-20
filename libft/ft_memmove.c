@@ -6,17 +6,16 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:53 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/20 13:12:33 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 14:22:52 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	copy_char(void *dest, const void *src, size_t n)
+void	copy_char(unsigned char *char_dest, const unsigned char *char_src,
+		size_t n)
 {
-	size_t				i;
-	unsigned char		*char_dest;
-	const unsigned char	*char_src;
+	size_t	i;
 
 	if (char_src < char_dest)
 	{
