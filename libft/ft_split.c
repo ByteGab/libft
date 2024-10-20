@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:18:01 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/20 10:26:27 by gafreire         ###   ########.fr       */
+/*   Updated: 2024/10/20 10:59:07 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,19 @@ static size_t	count_words(char const *s, char c)
 	i = 0;
 	word = 0;
 	count = 0;
-	if (s[i] != c && word == 0)
+	while(s[i] != '\0')
 	{
-		count++;
-		word = 1;
+		if (s[i] != c && word == 0)
+		{
+			count++;
+			word = 1;
+		}
+		else if (s[i] == c || s[i + 1] == c)
+		{
+			word = 0;
+		}
+		i++;
 	}
-	else if (s[i] == c)
-	{
-		word = 0;
-	}
-	i++;
 	return (count);
 }
 
