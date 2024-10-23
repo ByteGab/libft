@@ -3,107 +3,92 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gafreire <gafreire@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 16:18:01 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/20 11:47:35 by gafreire         ###   ########.fr       */
+/*   Created: 2024-10-23 15:14:16 by gafreire          #+#    #+#             */
+/*   Updated: 2024-10-23 15:14:16 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static size_t	count_words(char const *s, char c)
+static void	free_sub(char **sub, int words)
 {
-	size_t	i;
-	size_t	word;
-	size_t	count;
+	int	i;
+
+	i = 0;
+	while (i < words)
+	{
+		free(sub[i]);
+		i++;
+	}
+	free(sub);
+}
+
+static int	count_words(char const *s, char c)
+{
+	int	i;
+	int	word;
 
 	i = 0;
 	word = 0;
-	count = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		if (s[i] != c && word == 0)
-		{
-			count++;
-			word = 1;
-		}
-		else if (s[i] == c)
-		{
-			word = 0;
-		}
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
+			word++;
 		i++;
 	}
-	return (count);
+	return (word);
 }
 
-static size_t	size_sub(char const *s, char c)
+static int	size_sub(char const *s, char c)
 {
-	size_t	i;
-	size_t	count;
+	int	len;
+
+	len = 0;
+	while (s[len] && s[len] != c)
+		len++;
+	return (len);
+}
+
+static char	**place_sub(char const *s, char c, char **sub)
+{
+	int	i;
+	int	j;
+	int	count;
 
 	i = 0;
-	count = 0;
-	while (s[i] != '\0')
+	j = 0;
+	while (s[i])
 	{
-		if (s[i] != c)
+		if (s[i] == c)
+			i++;
+		else
 		{
-			count++;
+			count = size_sub(&s[i], c);
+			sub[j] = (char *)malloc((count + 1) * sizeof(char));
+			if (!sub[j])
+				return (free_sub(sub, j), NULL);
+			count = 0;
+			while (s[i] && s[i] != c)
+				sub[j][count++] = s[i++];
+			sub[j++][count] = '\0';
 		}
-		else if (count > 0)
-		{
-			break ;
-		}
-		i++;
 	}
-	return (count);
+	return (sub[j] = NULL, sub);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	words;
+	int		word;
 	char	**sub;
-	size_t	i;
-	size_t	j;
-	size_t	size_word;
-	size_t	k;
 
-	i = 0;
-	j = 0;
-	k = 0;
-	words = count_words(s, c);
-	sub = (char **)malloc(sizeof(char *) * (words + 1));
-	if (!sub)
-	{
+	if (!s)
 		return (NULL);
-	}
-	while (s[i] != '\0')
-	{
-		if (s[i] != c)
-		{
-			size_word = size_sub(&s[i], c);
-			sub[j] = (char *)malloc(sizeof(char) * (size_word + 1));
-			if (!sub[j])
-			{
-				while (k < j)
-				{
-					free(sub[k]);
-					k++;
-				}
-				free(sub);
-				return (NULL);
-			}
-			ft_memcpy(sub[j], &s[i], size_word);
-			sub[j][size_word] = '\0';
-			j++;
-			i += size_word;
-		}
-		else
-		{
-			i++;
-		}
-	}
-	sub[j] = NULL;
-	return (sub);
+	word = count_words(s, c);
+	sub = (char **)malloc((word + 1) * sizeof(char *));
+	if (!sub)
+		return (NULL);
+	return (place_sub(s, c, sub));
 }
