@@ -37,17 +37,14 @@ OBJECTS = $(SOURCES:.c=.o)
 
 CC = gcc                                                                      
 CFLAGS = -Wall -Wextra -Werror
-INCLUDE = -I include
+INCLUDE = libft.h
 RM = rm -rf                                                                     
 
 all: $(NAME)
 
 $(NAME) : $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
-
-%.o: %.c
-		$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@                       
-
+	
 clean:                                                                         
 		$(RM) $(OBJECTS)
 
