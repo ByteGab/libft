@@ -32,14 +32,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-int	main(void)
-{
-	char	src[50] = "Hello World!";
-	char	dest[50] = "Bye World!";
-
-	ft_memcpy(dest, src, 5);
-	write(1, dest, strlen(dest));
-	return (0);
-}
-*/

@@ -29,17 +29,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (size_src);
 }
-/*
-int	main(void)
-{
-	size_t	i;
-	char	dest[10] = "hola";
-	char	result;
-
-	i = 10;
-	char src [5] = "adios";
-	result = ft_strlcpy(dest, src, i);
-	write(1, result, 1);
-	return (0);
-}
-*/

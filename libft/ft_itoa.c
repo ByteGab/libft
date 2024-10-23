@@ -62,13 +62,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-		int     numerito = 4242;
-		printf("%s\n", ft_itoa(numerito));
-		return(0);
-}*/

@@ -18,15 +18,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-
-/*
-int	main(void)
-{
-	int c;
-
-	c = 5;
-	c = ft_tolower(c);
-	write(1, &c, 1);
-	return (0);
-}
-*/

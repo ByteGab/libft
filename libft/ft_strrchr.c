@@ -31,23 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (last_occurrence);
 }
-
-/*
-int	main(void)
-{
-	const char	*texto = "hola adios hola";
-	char		*resultado;
-
-	resultado = ft_strrchr(texto, 'h');
-	if (resultado != NULL)
-	{
-		printf("Carácter encontrado: %c\n", *resultado);
-		printf("Posición: %ld\n", resultado - texto);
-	}
-	else
-	{
-		printf("Carácter no encontrado.\n");
-	}
-	return (0);
-}
-*/

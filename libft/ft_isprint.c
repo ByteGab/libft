@@ -18,15 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	int	c;
-
-	c = '\0';
-	c = ft_isprint(c);
-	c += '0';
-	write(1, &c, 1);
-	return (0);
-}
-*/

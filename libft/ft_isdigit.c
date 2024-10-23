@@ -18,15 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	int	c;
-
-	c = 'b';
-	c = ft_isdigit(c);
-	c += '0';
-	write(1, &c, 1);
-	return (0);
-}
-*/

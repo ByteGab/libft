@@ -51,16 +51,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	copy_char(char_dest, char_src, n);
 	return (dest);
 }
-/*
-int	main(void)
-{
-	size_t	i;
-	char	src[5] = "adios";
-	char	dest[10] = "hola";
-
-	i = 10;
-	ft_memmove(dest, src, i);
-	write(1, dest, strlen(dest));
-	return (0);
-}
-*/

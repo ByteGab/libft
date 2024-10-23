@@ -18,14 +18,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*
-int	main(void)
-{
-	int c;
-
-	c = 'h';
-	c = ft_toupper(c);
-	write(1, &c, 1);
-	return (0);
-}
-*/

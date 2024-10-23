@@ -19,15 +19,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	int	c;
-
-	c = '络';
-	c = ft_isascii(c);
-	c += '0';
-	write(1, &c, 1);
-	return (0);
-}
-*/

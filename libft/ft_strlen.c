@@ -23,12 +23,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-/*
-int main() {
-    const char *str = "Hola, mundo!";
-    size_t length = ft_strlen(str);
-
-    printf("La longitud de la cadena es: %zu\n", length);
-    return 0;
-}
-*/

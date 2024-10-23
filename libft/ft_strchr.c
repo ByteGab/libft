@@ -27,22 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	const char	*texto = "hola mundo";
-	char		*resultado;
-
-	resultado = ft_strchr(texto, '\0');
-	if (resultado != NULL)
-	{
-		printf("Carácter encontrado: %c\n", *resultado);
-		printf("Posición: %ld\n", resultado - texto);
-	}
-	else
-	{
-		printf("Carácter no encontrado.\n");
-	}
-	return (0);
-}
-*/

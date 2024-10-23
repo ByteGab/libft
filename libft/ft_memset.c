@@ -26,13 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-int	main(void)
-{
-	char	str[50] = "Hello World!";
-
-	ft_memset(str, '-', 3);
-	write(1, str, strlen(str));
-	return (0);
-}
-*/
