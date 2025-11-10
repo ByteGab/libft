@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:24:31 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 16:49:51 by gafreire         ###   ########.fr       */
+/*   Updated: 2025/11/10 19:05:02 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
-	char	*schar;
+	char	*str;
 
 	i = 0;
-	schar = (char *)s;
+	str = (char *)s;
 	while (i < n)
 	{
-		schar[i] = '\0';
+		str[i] = '\0';
 		i++;
 	}
 }

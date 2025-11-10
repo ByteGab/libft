@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 03:23:58 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/15 17:57:21 by gafreire         ###   ########.fr       */
+/*   Updated: 2025/11/10 19:10:09 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,15 +37,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + '0', fd);
 	}
 }
-/*
-int main(void)
-{
-	int	fd;
-	int n;
-
-	fd = open("test.txt", O_WRONLY | O_CREAT, 0644);
-	ft_putnbr_fd(9999, fd);
-	close(fd);
-	return(0);
-}
-*/

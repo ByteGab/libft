@@ -6,7 +6,7 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:13:12 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/20 11:52:24 by gafreire         ###   ########.fr       */
+/*   Updated: 2025/11/10 19:07:26 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ int	ft_atoi(const char *nptr)
 	sign = 1;
 	while (nptr[i] == ' ' || nptr[i] == '\t' || nptr[i] == '\r'
 		|| nptr[i] == '\n' || nptr[i] == '\f' || nptr[i] == '\v')
-	{
 		i++;
-	}
 	if (nptr[i] == '-')
 	{
 		sign = -1;

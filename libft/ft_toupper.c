@@ -6,15 +6,13 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:53:59 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:23:45 by gafreire         ###   ########.fr       */
+/*   Updated: 2025/11/10 19:06:37 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
-	{
 		return (c - 32);
-	}
 	return (c);
 }

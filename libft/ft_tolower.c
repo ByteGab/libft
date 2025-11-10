@@ -6,15 +6,13 @@
 /*   By: gafreire <gafreire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:53:50 by gafreire          #+#    #+#             */
-/*   Updated: 2024/10/13 17:15:56 by gafreire         ###   ########.fr       */
+/*   Updated: 2025/11/10 19:06:48 by gafreire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
-	{
 		return (c + 32);
-	}
 	return (c);
 }

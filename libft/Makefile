@@ -35,7 +35,7 @@ SOURCES = ft_isalpha.c \
 			ft_putnbr_fd.c
 OBJECTS = $(SOURCES:.c=.o)                                                 
 
-CC = gcc                                                                      
+CC = cc                                                                   
 CFLAGS = -Wall -Wextra -Werror
 INCLUDE = libft.h
 RM = rm -rf                                                                     
