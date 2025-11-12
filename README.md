@@ -43,7 +43,27 @@
 - **`ft_putendl_fd`**: Outputs a string to a file descriptor followed by a newline.
 - **`ft_putnbr_fd`**: Outputs an integer to a file descriptor.
 
+### Bonus Functions (Linked Lists)
+These functions manage the `t_list` structure for simple linked lists.
+
+| Function | Description |
+| :--- | :--- |
+| **`ft_lstnew`** | Creates a new list node. |
+| **`ft_lstadd_front`** | Adds a node to the beginning of the list. |
+| **`ft_lstsize`** | Counts the number of nodes in the list. |
+| **`ft_lstlast`** | Returns the last node of the list. |
+| **`ft_lstadd_back`** | Adds a node to the end of the list. |
+| **`ft_lstdelone`** | Frees a single node and its content using a deletion function. |
+| **`ft_lstclear`** | Deletes and frees all nodes in the list, setting the list pointer to NULL. |
+| **`ft_lstiter`** | Iterates the list and applies a function to the content of each node. |
+| **`ft_lstmap`** | Creates a new list resulting from applying a function to the content of every node in the original list. |
+
 ## Compilation and Usage
 To compile the library, simply run the following command:
 ```bash
 make
+```
+## Additional Resources
+
+If you’d like to see detailed explanations and notes for each function, you can visit my Notion page here:  
+👉 [Libft – Notion Detailed Guide](https://www.notion.so/Libft-1086a32e0f34803f8e52d78621cf1a8f?source=copy_link)
